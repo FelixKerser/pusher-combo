@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix and Match</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js" integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <main class="mam__wrapper">
+        <h1 class="title--mobile">Manicure and Pedicure Pusher UNIQ COMBO</h1>
+        <section class="pusher">
+            <div class="svg-text">
+                <img src="./img/mix-and-match.png" alt="mix and match">
+            </div>            
+            
+            <div class="selector__wrapper">
+                <div class="mam-btn add-combo combo-mobile">ADD THIS COMBINATION TO CART</div>
+                
+                <div class="sliders__wrapper">
+                    <div class="upper swiper-container">
+                        <div class="swiper-wrapper">
+                            </div>
+                            <button class="swiper-button-prev upper-prev"></button>
+                            <button class="swiper-button-next upper-next"></button>
+                        </div>
+                        
+                        <div class="middle swiper-container">
+                            <div class="swiper-wrapper">
+                                </div>
+                                <button class="swiper-button-prev middle-prev"></button>
+                                <button class="swiper-button-next middle-next"></button>
+                            </div>
+                            
+                            <div class="bottom swiper-container">
+                                <div class="swiper-wrapper">
+                                    </div>
+                                    <button class="swiper-button-prev bottom-prev"></button>
+                                    <button class="swiper-button-next bottom-next"></button>
+                                </div>
+                            </div>
+                            <div class="mam-btn add-combo combo-pc">ADD THIS COMBINATION TO CART</div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="svg--mobile"><img src="./img/mam-mob.png" alt="mix and match"></div>
+            <h1 class="title-pc">Manicure and Pedicure Pusher UNIQ COMBO</h1>
+
+            <div class="constructor">
+
+                <h3>Upper</h3>
+                <div class="upper-catalog catalog" data-swiper-class="upper"></div>
+                <h3>Middle</h3>
+                <div class="middle-catalog catalog" data-swiper-class="middle"></div>
+
+                <h3 class="title--cart">Cart</h3>
+                <div class="cart catalog"></div>
+            </div>
+            
+            <div class="price-reset">
+                <div class="total-price"><span id="price">0</span> <span class="currency">zł</span></div>
+                <a href="#" id="reset-cart" class="reset-btn">Reset choice</a>
+            </div>
+            <a href="https://store.staleks.com" class="mam-btn" id="buy-btn"><div id="total-quantity">0</div>Purchase</a>
+            
+
+        </section>
+    </main>
+
+    <div id="confirmation-popup" class="popup">
+        <div class="popup-content">
+            <p>Are you sure you want to clear the cart?</p>
+            <div class="popup-buttons">
+                <button id="confirm-yes" class="popup-btn">Yes</button>
+                <button id="confirm-no" class="popup-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+<style>
+    .partner-product-dropdown, .partner-product-dropdown-content, .partner-product-dropbtn{
+        width: -webkit-fill-available !important;
+    }
+</style>
+
+<script src="./assets/js/mam-json.js"></script>
+<script src="./assets/js/mam-constructor.js"></script>
+<script src="./assets/js/mam-scripts.js"></script>
+
+</body>
+</html>
